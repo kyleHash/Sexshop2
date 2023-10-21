@@ -1,0 +1,65 @@
+/* main.css */
+body {
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo img {
+    
+    margin-bottom: 700px; /* Reset the margin to zero */
+}
+
+
+.content-container {
+    text-align: center; /* Center the content horizontally */
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(229,19,39,0.60); /* Add a glow effect */
+    text-align: left;
+    margin-right: 20px; /* Adjust the margin as needed for centering */
+}
+
+.contact-form h1 {
+    color: white;
+}
+
+.contact-form label {
+    display: block;
+    color: white;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #00A4BD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

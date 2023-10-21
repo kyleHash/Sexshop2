@@ -1,0 +1,161 @@
+/* product1.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111; 
+    height: 100vh;
+    margin: 0;
+}
+
+.product-details {
+    width: 50%; 
+    padding: 20px; 
+}
+
+.product-details h1 {
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.product-container img {
+    max-width: 50%; 
+    margin: 0; 
+}
+
+.Images img {
+    position: absolute;
+    top: 0; 
+    left: 25%;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    margin-top: 20px; /* Moved this here to add space below */
+}
+
+.dropdown button {
+    background-color: #000;
+    border: 1px solid crimson; 
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 30px 0 crimson,
+                0 0 30px 0 crimson,
+                0 0 10px 0 crimson inset;
+    width: 100%; 
+    text-align: left; 
+    position: relative;
+}
+
+.dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%; 
+    left: 50%; 
+    border: solid;
+    border-width: 6px; /* Adjust the size of the arrow */
+    border-color: #fff transparent transparent transparent; 
+    transform: translateX(-50%); 
+}
+
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropdown-content a {
+    display: block;
+    color: whitesmoke;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+.dropdown2 {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    margin-top: 20px; /* Moved this here to add space below */
+}
+
+.dropdown2 button {
+    background-color: #000;
+    border: 1px solid crimson; 
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 30px 0 crimson,
+                0 0 30px 0 crimson,
+                0 0 10px 0 crimson inset;
+    width: 100%; 
+    text-align: left; 
+    position: relative;
+}
+
+.dropdown2::before {
+    content: '';
+    position: absolute;
+    top: 100%; 
+    left: 50%; 
+    border: solid;
+    border-width: 6px; /* Adjust the size of the arrow */
+    border-color: #fff transparent transparent transparent; 
+    transform: translateX(-50%); 
+}
+
+.dropdown2 .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown2:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown2 .dropdown-content a {
+    display: block;
+    color: whitesmoke;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown2 .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+#variation-container {
+    position: absolute;
+    bottom: 320px; /* Adjust the bottom position */
+    left: 22%; /* Center it horizontally */
+    transform: translateX(-50%); /* Center it horizontally */
+}
+.product-details ul {
+    color: whitesmoke;
+}

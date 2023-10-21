@@ -1,0 +1,95 @@
+/* product1.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111; 
+    height: 100vh;
+    margin: 0;
+}
+
+.product-details {
+    width: 50%; 
+    padding: 20px; 
+}
+
+.product-details h1 {
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.product-container img {
+    max-width: 50%; 
+    margin: 0; 
+}
+
+.Images img {
+    position: absolute;
+    top: 0; 
+    left: 25%;
+}
+
+/* Styles for both "Model" and "Color" dropdowns */
+.dropdown, .dropdown2, .dropdown-color {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    margin-top: 20px; /* Common margin for all dropdowns */
+}
+
+.dropdown button, .dropdown2 button, .dropdown-color button {
+    background-color: #000;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 30px 0 crimson, 0 0 30px 0 crimson, 0 0 10px 0 crimson inset;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.dropdown::before, .dropdown2::before, .dropdown-color::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: solid;
+    border-width: 6px; /* Adjust the size of the arrow */
+    border-color: #fff transparent transparent transparent;
+    transform: translateX(-50%);
+}
+
+.dropdown .dropdown-content, .dropdown2 .dropdown-content, .dropdown-content-color {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content, .dropdown2:hover .dropdown-content, .dropdown-color:hover .dropdown-content-color {
+    display: block;
+}
+
+.dropdown .dropdown-content a, .dropdown2 .dropdown-content a, .dropdown-content-color a {
+    display: block;
+    color: whitesmoke;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-content a:hover, .dropdown2 .dropdown-content a:hover, .dropdown-content-color a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
